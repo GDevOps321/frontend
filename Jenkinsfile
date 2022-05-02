@@ -13,10 +13,10 @@
        }
            stage('upload to nexus') {
               steps {
-                 //sh '''
+                 sh '''
 
                     curl -v -u admin:admin --upload-file frontend.zip http://172.31.20.130:8081/repository/frontend/frontend.zip
-                 //'''
+                 '''
               }
            }
           }
