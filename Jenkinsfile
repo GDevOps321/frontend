@@ -1,13 +1,13 @@
 pipeline {
     agent any
-    satges {
+    stages {
 
        stage('prepare artifact'){
           steps {
             sh '''
                zip ../frontend.zip *
 
-              '''
+               '''
             }
           }
        }
