@@ -1,6 +1,5 @@
 pipeline {
-
-  agent any
+    agent any
     satges {
 
        stage('prepare artifact'){
